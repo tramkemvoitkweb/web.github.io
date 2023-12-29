@@ -73,7 +73,7 @@
 #banner{
     position: absolute;
     width: 1440px;
-    height: 3908px;
+    height: 3863px;
     background-image: url("back.png");
     background-size: cover ;
     
@@ -321,14 +321,14 @@ float: left;
 #wap{
     width: 1440px;
   height: 40px;
-  margin-top: 3867px;
+  margin-top: 3823px;
   padding: 2.5px 258px 2.5px 252px;
   background-color: black;
   position: absolute;
 }
 #footer{
     width: 930px;
-    padding: px 133px;
+    padding: 6px 133px;
     display: flex;
     justify-content: space-between ;
     text-align: center;
