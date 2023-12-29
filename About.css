@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Be Vietnam Pro|Saira Stencil One|Bayon');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abeezee',sans-serif;
+    font-size: 20px;
+}
+#wrapper{
+    width: 1440px;
+    height:40px;
+    background-color: black;
+}
+#header{
+    width: 100%;
+    padding-left:  22px;
+    display: flex;
+    justify-content: space-between;
+}
+#header .logo img{
+    margin-top: 2.22px;
+    border: 0px solid;
+    border-radius:50%;
+}
+#menu {
+    list-style: none;
+    display: flex;
+}
+#menu .item{
+    margin: 8px 20px;
+    border: 1px solid ;
+    width: 85px;
+    height: 24px;
+    box-shadow: 0px 1px black;
+}
+#menu .item a{
+    height: 24px;
+    width: 89px;
+    line-height: 24px;
+    color: white;
+    text-decoration:none;
+}
+#menu .item b{
+    height: 24px;
+    width: 89px;
+    line-height: 24px;
+    color: #3a64d0;
+    text-decoration:none;
+    border-bottom: 1px solid #3a64d0;
+}
+#menu .item a:hover{
+    color: #3a64d0;
+    box-shadow: 0px 1px #3a64d0;
+}
+#menu .khoi{
+    width: 228px;
+    height: 40px;
+    background-color: #F9D0AB;
+    margin-left: 20px;
+    padding: 8px 40px ;
+    text-decoration:none;
+    box-sizing: border-box;
+    border: 0px solid #F9D0AB ;
+    border-bottom-left-radius: 50px;
+    font-size: 18px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 700;
+}
+#menu .khoi a{
+    color: black;
+    text-decoration:none;
+}
+#banner{
+    position: absolute;
+    width: 1440px;
+    height: 3908px;
+    background-image: url("back.png");
+    background-size: cover ;
+    
+}
+#banner .top h2{
+ font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 95px;
+line-height: 150px;
+align-items: center;
+color: white ;  
+margin: 51.7px 339px 52px 340px;
+}
+#banner .mot h3{
+    width: 393px;
+  height: 120px;
+  font-family: Bayon;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin: 108px 177px 25px 160px;
+}
+#banner .mot p{
+    width: 455px;
+  height: 190px;
+  margin: 25px 115px 122px 160px;
+  font-family: ABeeZee;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: white;
+
+}
+#banner .mot img{
+    width: 550px;
+  height: 332px;
+    margin-right: 160px;
+    float: right;
+}
+
+#banner .hai h3{
+    width: 261px;
+  height: 120px;
+  margin-right: 160px;
+  font-family: Bayon;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  float: right;
+}
+#banner .hai p{
+    width: 455px;
+    height: 142px;
+    margin-right: 160px;
+    margin-top: 25px ;
+  font-family: ABeeZee;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: white;
+  float: right;
+}
+#banner .hai img{
+    width: 550px;
+    height: 284px;
+    margin-left: 160px;
+    margin-bottom: 167px;
+float: left;
+
+}
+#banner .ba h3{
+    width: 420px;
+    height: 60px;
+    margin-left: 160px;
+    margin-bottom: 25px;
+    font-family: Bayon;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: right;
+    color: #fff;
+}
+#banner .ba p{
+    width: 454px;
+    height: 96px;
+    margin-left: 160px;
+    margin-top: 474px;
+    font-family: ABeeZee;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: white;
+
+}
+#banner .ba img{
+    width: 550px;
+  height: 299.1px;
+  margin-right:160px;
+  margin-top: 106px;
+  margin-bottom: 78.9px;
+  float: right;
+}
+#banner .bon h3{
+    width: 340px;
+    height: 120px;
+    margin-right: 160px;
+    margin-bottom: 25px;
+    font-family: Bayon;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    float:right;
+}
+#banner .bon p{
+    width: 455px;
+    height: 306px;
+    margin-right: 160px;
+
+    font-family: ABeeZee;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: white;
+    float: right;
+}
+#banner .bon img{
+    width: 549px;
+    height: 356px;
+    margin-left: 160px;
+    margin-top: 139px;
+    margin-bottom: 120px;
+    float: left;
+}
+#banner .mid h3{
+    width: 827px;
+  height: 69px;
+  margin-left: 306px;
+  margin-right: 307px;
+  margin-bottom: 120px;
+  font-family: Bayon;
+  font-size: 50px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  float: inline-start;
+}
+#banner .mid img{
+    width: 930px;
+  height: 496px;
+  margin-left: 255px;
+  margin-right: 255px;
+  margin-bottom: 86px;
+}
+#banner .text h4{
+    width: 238px;
+    height: 54px;
+    margin-left: 601px;
+    margin-right: 601px;
+    margin-bottom: 40px;
+    font-family: Bayon;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+}
+#mail{
+    width: 1015px;
+  height: 45px;
+    margin-left: 262px;
+    margin-right: 163;
+  flex-grow: 0;
+  flex-direction: row;
+  display: inline-block;
+}
+#mail .button{
+    display: inline-block;
+    padding: 11px 39px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #ea2222;
+    border-radius: 250px;
+    border: 1px solid #ea2222;
+}
