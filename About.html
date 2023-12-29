@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="About.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="About.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div id="wrapper">
@@ -63,38 +63,69 @@
             <img src="anh5.png" alt="">
         </div>
         <div class="text"><h4>sign up for update!</h4> </div>
-       <div id="mail">
-            <i class="far fa-envelope"></i>
-        <input type="email" class="form">
-        <a href="" class="button">
-            <span class="btext">Submit</span>
-            <span class="bicon"><i class="fa-sharp fas fa-plus"></i></span>
-        </a>
-   
+
+        <div id="mail">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <input type="email" id="emailInput">
+            <button type="button" class="button" onclick="submitEmail()">
+                <span class="button-text">Submit</span>
+                <span class="button-bg"></span>
+            </button>
         </div>
     </div>
     <div id="wap">
     <div id="footer">
         <div class="item">
-         <a href="">Privacy policy</a>   
+            <a href="">Privacy policy</a>
         </div>
         <div class="item">
-        <a href="">Terms of Service</a>      
+            <a href="">Terms of Service</a>
         </div>
         <div class="logo">
-        <a href=""><i class="fa-brands fa-square-facebook"></i></a>    
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
         </div>
         <div class="logo">
-        <a href=""></a>    
+            <a href=""></a>
         </div>
         <div class="item">
-        <a href="">About us</a>      
+            <a href="">About us</a>
         </div>
         <div class="item">
-        <a href=""> Contact us</a>      
+            <a href=""> Contact us</a>
         </div>
     </div>
     </div>
 
+    <!-- Email popup -->
+    <div id="emailModal" class="modal">
+        <div id="modal-content">
+            <p>Thank you for sign up!</p>
+        </div>
+    </div>
+
+    <script>
+        function submitEmail() {
+            const email = document.getElementById('emailInput').value;
+            console.log("Email for proof: " + email);
+            // Reset the input field
+            document.getElementById('emailInput').value = '';
+            document.getElementById('emailModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('emailModal').style.display = 'none';
+        }
+
+        // Close the modal when on background click
+        window.onclick = function(event) {
+            const modal = document.getElementById('emailModal');
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
