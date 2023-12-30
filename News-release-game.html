@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Release game</title>
+    <link rel="stylesheet" href="News-release-game.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="Aboutus.html" class="logo">
+                <img src="logo.jpg" height="36px" width="40.5px" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="Home.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="About.html">About</a>
+                </div>
+                <div class="item">
+                    <b href="">News</b>
+                </div>
+                <div class="item">
+                    <a href="Store.html">Store</a>
+                </div>
+                <div class="khoi">
+                    <a href="https://store.steampowered.com/">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner">
+        <div class="top">
+                <h2>THE SILENT CITY</h2>
+        </div>    
+        <div class="back">
+            <a href=""><i class="fas fa-chevron-left"></i></a>
+            <p>Back</p>
+        </div> 
+        <div id="mid">
+            <div class="mot"> 
+            <d>5/11/2022</d>
+            <h1>"The Silent City" - Embark on a Riveting Journey of Redemption</h1>
+            <img src="release game.webp" alt="">
+            <p> Get ready for an unparalleled gaming experience as we unveil "The Silent City," an immersive action-adventure that plunges players into the gripping narrative of former detective Lukas Krausen. Accused of heinous crimes, Lukas returns to the mysterious city of San Roguina to reclaim his honor and uncover the truth.</p>
+            <h2>oin Lukas on a Quest for Justice:</h2>
+            <p>Step into the shoes of Lukas Krausen, navigating the enigmatic streets of San Roguina to unravel a web of deceit, corruption, and personal struggles. Solve intricate puzzles, face formidable adversaries, and confront the shadows of your own past in this atmospheric thriller.</p>
+            <h2>Captivating Gameplay:</h2>
+            <p>"The Silent City" offers a perfect blend of intense action sequences and mind-bending puzzles, challenging your skills and intellect. Stealth, strategy, and investigation are your tools as you traverse the dark corners of the city.</p>
+            <h2>Stunning Graphics and Soundtrack:</h2>
+            <p> Immerse yourself in the visually stunning world of San Roguina, brought to life with meticulous detail and accompanied by a haunting soundtrack that heightens the suspense.</p>
+            </div>
+            <div class="hai">
+                <h1>latest news</h1>
+                <div class="bai">
+                <div class="khoi1">
+                    <img src="phone case1.jpg" alt="">
+                    <h3>Cityscape Chronicles Phone Cases</h3>
+                    <p> Wrap your phone in the enigmatic beauty of San K. Roguina city with our "Cityscapes Chronicles III DLC" phone cases merch. Featuring many stunning artwork inspired by the game's 2D atmospheric aesthetics..</p>
+                    <d> 27/12/2023</d>
+                </div>
+                <div class="khoi2">
+                    <img src="mouse pad.webp" alt="">
+                    <h3>Shadow Hunter Mouse Pads</h3>
+                    <p>Go through the shadows with precision using our new "Shadow Hunter" mouse pads. Designed for all gamers and tech enthusiasts alike, these mouse pads boast intricate details and evoke the suspense of "The Silent City."...</p>
+                    <d>26/12/2023</d>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+                
+          
+   
+        
+        
+    
+
+
+
+        <div class="text"><h4>sign up for update!</h4> </div>
+
+        <div id="mail">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <input type="email" id="emailInput">
+            <button type="button" class="button" onclick="submitEmail()">
+                <span class="button-text">Submit</span>
+                <span class="button-bg"></span>
+            </button>
+        </div>
+    </div>
+
+    
+
+    <div id="wap">
+        <div id="footer">
+            <div class="item">
+                <a href="Privacy.html">Privacy policy</a>
+            </div>
+            <div class="item">
+                <a href="Tos.html">Terms of Service</a>
+            </div>
+            <div class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="logo">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="item">
+                <a href="Aboutus.html">About us</a>
+            </div>
+            <div class="item">
+                <a href="https://www.gmail.com/" target="_blank"> Contact us</a>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Email popup -->
+        <div id="emailModal" class="modal">
+            <div id="modal-content">
+                <p>Thank you for sign up!</p>
+            </div>
+        </div>
+    
+</body>
+<script>
+    function submitEmail() {
+        const email = document.getElementById('emailInput').value;
+        console.log("Email for proof: " + email);
+        // Reset the input field
+        document.getElementById('emailInput').value = '';
+        document.getElementById('emailModal').style.display = 'block';
+    }
+
+    // Close the modal when on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('emailModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>
