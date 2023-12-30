@@ -1,46 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=ABeeZee|Be Vietnam Pro|Saira Stencil One|Bayon');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Abeezee',sans-serif;
-    font-size: 20px;
+#wrapper {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
 }
-#wrapper{
-    width: 1440px;
+
+#header {
+    display: flex;
+    width: 100%;
     height: 40px;
+    padding-left: 22px;
+    justify-content: space-between;
     background-color: black;
 }
-#header{
-    width: 100%;
-    padding-left:  22px;
-    display: flex;
-    justify-content: space-between;
-}
-#header .logo img{
+
+#header .logo img {
     margin-top: 2px;
     border: 0 solid;
-    border-radius:50%;
+    border-radius: 50%;
 }
+
 #menu {
     list-style: none;
     display: flex;
 }
-#menu .item{
+
+#menu .item {
     margin: 8px 20px;
-    border: 1px solid ;
+    border: 1px solid;
     width: 85px;
     height: 24px;
     box-shadow: 0 1px black;
 }
-#menu .item a{
+
+#menu .item a {
     height: 24px;
     width: 89px;
     line-height: 24px;
     color: white;
     text-decoration: none;
 }
-#menu .item b{
+
+#menu .item b {
     height: 24px;
     width: 89px;
     line-height: 24px;
@@ -48,298 +48,177 @@
     text-decoration: none;
     border-bottom: 1px solid #3a64d0;
 }
-#menu .item a:hover{
+
+#menu .item a:hover {
     color: #3a64d0;
-    
 }
-#menu .khoi{
+
+#menu .khoi {
     width: 228px;
     height: 40px;
     background-color: #F9D0AB;
     margin-left: 20px;
-    padding: 8px 40px ;
+    padding: 8px 40px;
     text-decoration: none;
     box-sizing: border-box;
-    border: 0px solid #F9D0AB ;
+    border: 0px solid #F9D0AB;
     border-bottom-left-radius: 50px;
     font-size: 18px;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 700;
 }
-#menu .khoi a{
+
+#menu .khoi a {
     color: black;
     text-decoration: none;
 }
-#banner{
-    position: absolute;
-    width: 1440px;
-    height: 2522px;
-    background-image: url("back.png");
+
+.top {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+    height: 650px;
+    background-image: url("home.png");
     background-size: cover;
 }
-#banner .top{
-    height: 650px;
-    width: 1440px;
-    background-image: url("home.png") ;
-    display: flex;
-}
-#banner .top .button{
-    position: absolute;
+
+.top .button {
     width: 150px;
     height: 30px;
-    padding-left: 19.6px;
-    background-color: #91b0ff;
+    padding-left: 20px;
+    background-color: #91B0FF;
     text-decoration: none;
-    flex-grow: 0;
     border-radius: 50px;
     border: solid 1px white;
-    margin-top: 570px;
-    margin-left: 1239px;
-    
+    margin-right: 20px;
+    margin-bottom: -100px;
+    place-self: self-end;
 }
-#banner .top .button .button-text{
+
+.top .button .button-text {
     color: white;
     font-size: 16px;
 }
-#banner .top .button .button-icon .fas.fa-arrow-right{
+
+.top .button .button-icon .fas.fa-arrow-right {
     color: white;
 }
-#banner .top h2{
-    position: absolute;
+
+.top h2 {
     font-family: 'Saira Stencil One', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 95px;
     line-height: 150px;
-    align-items: center;
-    color: white;
-    margin-top: 509px;
-    margin-left: 338px;
-    float: bottom;
-}
-
-#banner .mot{
-    margin-top: 138px;
-}
-#banner .mot h3{
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    margin-bottom: 0px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-    margin-left: 160px ;
-}
-#banner .mot p{
-    width: 455px;
-    height: 144px;
-    margin: 25px 115px 112px 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-}
-#banner .mot img{
-    width: 550px;
-    height: 284px;
-    margin-right: 160px;
-    float: right;
-}
-
-#banner .mid h3{
-    width: 827px;
-    height: 69px;
-    margin-left: 306px;
-    margin-right: 307px;
-    margin-bottom: 63px;
-    font-family: Bayon, sans-serif;
-    font-size: 50px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
-    color: #fff;
-}
-#banner .mid .logo{
-    width: 1120px;
-  height: 120px;
-  margin-left: 160px;
-  background-color: white;
-  margin-bottom: 105px;
-  font-size: 100px;
-  justify-content: space-between;
-}
-#banner .mid img{
-    width: 945.2px;
-  height: 580px;
-  flex-grow: 0;
-  margin-left: 247.6px;
-  margin-bottom: 58px;
+    color: white;
 }
 
-#banner .down{
-    width: 358px;
-  height: 85px;
-  flex-grow: 0;
-  margin-left: 540px;
-  margin-bottom: 33px;
-  padding: 5px 44px 9px 45px;
-  border-radius: 100px;
-  background-color: #f9d0ab
+#banner .section {
+    margin: 0 160px 120px 160px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 90px;
 }
-#banner .down a{
+
+#banner .section h3 {
+    margin-bottom: 25px;
+    margin-right: 60px;
+}
+
+#banner .section .img-content,
+#banner .section .content {
+    width: 50%;
+    overflow: hidden;
+}
+
+#banner .section .img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#banner .content {
+    flex-direction: column;
+}
+
+#banner .mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner .mid h3 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#banner .mid img {
+    margin: 0 255px 60px 255px;
+}
+
+#banner .platform {
+    display: flex;
+    max-height: 120px;
+    justify-content: center;
+    margin-bottom: 100px;
+    gap: 60px;
+}
+
+#banner .platform img {
+    width: 120px;
+    max-height: 120px;
+    margin: 0;
+    object-fit: contain;
+}
+
+#banner .down {
+    margin: 0 auto 33px auto;
+    width: 360px;
+    padding: 5px 44px 9px 45px;
+    border-radius: 100px;
+    background-color: #f9d0ab
+}
+
+#banner .down a {
     color: black;
     font-size: 45px;
-    font-family: Bayon;
+    font-family: Bayon, sans-serif;
     text-decoration: none;
 }
 
-#banner .text h4{
-    width: 238px;
-    height: 54px;
-    margin-left: 601px;
-    margin-right: 601px;
+#banner .text {
+    text-align: center;
     margin-bottom: 20px;
-    font-family: Bayon, sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: white;
 }
 
 /* Footer */
-#mail{
-    display: flex;
-    flex-direction: row;
-    width: 1015px;
-    height: 45px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-#mail .icon {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
-#mail .icon i {
-    font-size: 50px;
-    color: #fff;
-}
-#mail input[type=email] {
-    flex-grow: 1;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-#mail .button {
-    display: inline-block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 38px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #ea2222;
-    border-radius: 50px;
-    border: 1px solid #ea2222;
-    margin-left: 30px;
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-    z-index: 5;
-}
-#mail .button:hover {
-    cursor: pointer;
-}
-#mail .button-text {
-    display: block;
-    position: relative;
-    padding-right: 15px;
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-    z-index: 5;
-}
-#mail .button-text:after {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-}
-#mail .button:hover .button-text:after {
-    transform: translate(30px, -50%);
-}
-#mail .button:hover .button-text {
-    transform: translateX(-3px);
-}
-#mail .button-bg {
-    border: solid 2px #fb2600;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: left 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-}
-#mail .button:hover .button-bg {
-    left: calc(75%);
-}
-#emailModal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 10;
-}
-#modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 500px;
-    height: 270px;
-    border-radius: 35px;
-    text-align: center;
-}
-#wap{
-    width: 1440px;
-    margin-top: 2484px;
-    padding: 3px 258px 3px 252px;
+#wap {
     background-color: black;
-    position: absolute;
+    margin-top: 40px;
 }
-#footer{
-    width: 930px;
-    padding: 6px 133px;
+
+#footer {
     display: flex;
-    justify-content: space-between ;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+    justify-content: space-around;
     text-align: center;
 }
-#footer .item a{
+
+#footer .item a {
     color: white;
     font-size: 15px;
     font-family: AbeeZee, sans-serif;
     text-decoration: none;
 }
-#footer .logo i{
+
+#footer .item a:hover {
+    color: #3a64d0;
+}
+
+#footer .logo i {
     color: white;
     font-size: 25px;
 }
