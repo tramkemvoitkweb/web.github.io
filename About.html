@@ -11,23 +11,23 @@
     <div id="wrapper">
         <div id="header">
             <a href="" class="logo">
-                <img src="geko.png" height="36px" width="40.5px" alt="">
+                <img src="logo.jpg" height="36px" width="40.5px" alt="">
             </a>
             <div id="menu">
                 <div class="item">
-                    <a href="">Home</a>
+                    <a href="Home.html">Home</a>
                 </div>
                 <div class="item">
-                    <b href="">About</b>
+                    <b href="About.html">About</b>
                 </div>
                 <div class="item">
                     <a href="">News</a>
                 </div>
                 <div class="item">
-                    <a href="">Store</a>
+                    <a href="Store.html">Store</a>
                 </div>
                 <div class="khoi">
-                    <a href="">Download Now</a>
+                    <a href="https://store.steampowered.com/">Download Now</a>
                 </div>
             </div>
         </div>
@@ -60,7 +60,8 @@
         </div>
         <div class="mid">
             <h3>"The silent city" await your exploration.</h3>
-            <img src="anh5.png" alt="">
+            <!--<img src="anh5.png" alt="">-->
+            <iframe width="930" height="496" src="https://www.youtube.com/embed/t5-cpIPT58I?si=Czd-IK8KRtY3kWsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="text"><h4>sign up for update!</h4> </div>
 
@@ -78,22 +79,22 @@
     <div id="wap">
     <div id="footer">
         <div class="item">
-            <a href="">Privacy policy</a>
+            <a href="Privacy.html">Privacy policy</a>
         </div>
         <div class="item">
-            <a href="">Terms of Service</a>
+            <a href="Tos.html">Terms of Service</a>
         </div>
         <div class="logo">
-            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
         </div>
         <div class="logo">
-            <a href=""></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
         </div>
         <div class="item">
-            <a href="">About us</a>
+            <a href="Aboutus.html">About us</a>
         </div>
         <div class="item">
-            <a href=""> Contact us</a>
+            <a href="https://www.gmail.com/" target="_blank"> Contact us</a>
         </div>
     </div>
     </div>
@@ -104,28 +105,22 @@
             <p>Thank you for sign up!</p>
         </div>
     </div>
-
-    <script>
-        function submitEmail() {
-            const email = document.getElementById('emailInput').value;
-            console.log("Email for proof: " + email);
-            // Reset the input field
-            document.getElementById('emailInput').value = '';
-            document.getElementById('emailModal').style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('emailModal').style.display = 'none';
-        }
-
-        // Close the modal when on background click
-        window.onclick = function(event) {
-            const modal = document.getElementById('emailModal');
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
+<script>
+    function submitEmail() {
+        const email = document.getElementById('emailInput').value;
+        console.log("Email for proof: " + email);
+        // Reset the input field
+        document.getElementById('emailInput').value = '';
+        document.getElementById('emailModal').style.display = 'block';
+    }
 
+    // Close the modal when on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('emailModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </html>

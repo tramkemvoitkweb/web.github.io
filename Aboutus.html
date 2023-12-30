@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus</title>
+    <link rel="stylesheet" href="Aboutus.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="logo.jpg" height="36px" width="40.5px" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="Home.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="About.html">About</a>
+                </div>
+                <div class="item">
+                    <a href="">News</a>
+                </div>
+                <div class="item">
+                    <a href="Store.html">Store</a>
+                </div>
+                <div class="khoi">
+                    <a href="https://store.steampowered.com/">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="banner">
+        <div class="logo">
+            <img src="logo.jpg" alt="" >
+        </div>
+        <div class="top">
+                <h2>THE SILENT CITY</h2>
+                <h3>a work of luonvuituoi studio</h3>
+        </div> 
+        <div id="mid">
+            <div class="text">
+            <h3>about us</h3>
+            <p>At LuonVuiTuoi, we are committed to creating immersive virtual world experiences for players around the world. In addition to game products such as The Silenct City, we also created a variety of products such as animations, music, novels, and merchandise around our original creative concept. Adhering to our mission of Luon Vui Tuoi, we have always been committed to technology research and development, exploring cutting-edge technologies, and have accumulated leading technical capabilities in cartoon rendering, artificial intelligence, cloud gaming technology, and other fields as well. LuonVuiTuoi is actively engaged in globalization, with offices in Singapore, Montreal, Los Angeles, Tokyo, Seoul, and other areas.</p>
+            <h3>about the silent city</h3>
+            <p>"The Silent City" is an action-adventure game that takes players on a gripping journey alongside former L.A.P.D detective Lukas Krausen. Lukas finds himself in the quest for justice in the city of San Roguina, USA, after being investigated for a prolonged period in connection with murder allegations related to a case he once worked on.</p>
+            <p>In "The Silent City," players assume the role of Lukas Krausen, a skilled and talented former investigator determined to clear his name. Faced with serious murder accusations linked to a past case, Lukas decides to return to the city of San Roguina to seek justice and prove his innocence.</p>
+        </div>
+            
+        </div>    
+        
+        <div class="text"><h4>sign up for update!</h4> </div>
+
+        <div id="mail">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <input type="email" id="emailInput">
+            <button type="button" class="button" onclick="submitEmail()">
+                <span class="button-text">Submit</span>
+                <span class="button-bg"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="wap">
+        <div id="footer">
+            <div class="item">
+                <a href="Privacy.html">Privacy policy</a>
+            </div>
+            <div class="item">
+                <a href="Tos.html">Terms of Service</a>
+            </div>
+            <div class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="logo">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="item">
+                <a href="Aboutus.html">About us</a>
+            </div>
+            <div class="item">
+                <a href="https://www.gmail.com/" target="_blank"> Contact us</a>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Email popup -->
+    <div id="emailModal" class="modal">
+        <div id="modal-content">
+           <p>Thank you for sign up!</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    function submitEmail() {
+        const email = document.getElementById('emailInput').value;
+        console.log("Email for proof: " + email);
+        // Reset the input field
+        document.getElementById('emailInput').value = '';
+        document.getElementById('emailModal').style.display = 'block';
+    }
+
+    // Close the modal when on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('emailModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>

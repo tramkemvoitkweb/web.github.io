@@ -50,6 +50,7 @@
 }
 #menu .item a:hover{
     color: #3a64d0;
+    
 }
 #menu .khoi{
     width: 228px;
@@ -72,7 +73,7 @@
 #banner{
     position: absolute;
     width: 1440px;
-    height: 3863px;
+    height: 2182px;
     background-image: url("back.png");
     background-size: cover;
 }
@@ -84,140 +85,85 @@
     line-height: 150px;
     align-items: center;
     color: white;
-    margin: 52px 339px 52px 340px;
+    margin: 52px 339px 27px 340px;
 }
-#banner .mot h3{
-    width: 393px;
-    height: 120px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
+#banner .line{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+}
+#mot .menu .line2{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-top: 55px;
+}
+#mot .menu .line3{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-top: 55px ;
+}
+#mot .menu h3{
+    height: 72px;
+    margin: 0px 175px 0px 160px;
+    font-family: Bayon;
+    font-size: 40px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: normal;
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    margin: 108px 177px 25px 160px;
 }
-#banner .mot p{
-    width: 455px;
-    height: 190px;
-    margin: 25px 115px 122px 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-}
-#banner .mot img{
-    width: 550px;
-    height: 332px;
-    margin-right: 160px;
-    float: right;
-}
-#banner .hai h3{
-    width: 261px;
-    height: 120px;
-    margin-right: 160px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float: right;
-}
-#banner .hai p{
-    width: 455px;
-    height: 142px;
-    margin-right: 160px;
-    margin-top: 25px ;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-    float: right;
-}
-#banner .hai img{
-    width: 550px;
-    height: 284px;
-    margin-left: 160px;
-    margin-bottom: 167px;
-    float: left;
-}
-#banner .ba h3{
-    width: 420px;
-    height: 60px;
-    margin-left: 160px;
-    margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: #fff;
-}
-#banner .ba p{
-    width: 454px;
-    height: 96px;
-    margin-left: 160px;
-    margin-top: 474px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
 
+#mot .menu .hang1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px
 }
-#banner .ba img{
-    width: 550px;
-    height: 299px;
-    margin-right:160px;
-    margin-top: 106px;
-    margin-bottom: 79px;
-    float: right;
+#mot .menu .hang1 .o1{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
 }
-#banner .bon h3{
-    width: 340px;
-    height: 120px;
-    margin-right: 160px;
-    margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float:right;
+#mot .menu img{
+    width: 264px;
+  height: 256px;
+  flex-grow: 0;
+  margin: 0 17.9px 15px 12.9px;
 }
-#banner .bon p{
-    width: 455px;
-    height: 306px;
-    margin-right: 160px;
-    font-family: ABeeZee, sans-serif;
+#mot .menu h4{
+    width: 235.7px;
+  height: 60px;
+  flex-grow: 0;
+  font-family: Bayon;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000;
+}
+#mot .menu a{
+    text-decoration: none;
+}
+#mot .menu p{
+    width: 294.8px;
+    flex-grow: 0;
+    font-family: ABeeZee;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -225,47 +171,57 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: justify;
-    color: white;
-    float: right;
+    color: #000;
 }
-#banner .bon img{
-    width: 549px;
-    height: 356px;
+#mot .menu .hang1 .o2{
+    width: 361px;
+    height: 450px;
+    flex-grow: 0;
+    padding: 36px 30.1px 0 36.1px;
+    background-color: #d9d9d9
+}
+#mot .menu .hang1 .o3{
+    width: 360px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30px 0 36px;
+  background-color: #d9d9d9;
+}
+#mot .menu .hang2{
+    display: inline-flex;
+    justify-content: 3px;
     margin-left: 160px;
-    margin-top: 139px;
-    margin-bottom: 120px;
-    float: left;
+    margin-right: 160px
 }
-#banner .mid h3{
-    width: 827px;
-    height: 69px;
-    margin-left: 306px;
-    margin-right: 307px;
-    margin-bottom: 120px;
-    font-family: Bayon, sans-serif;
-    font-size: 50px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-    float: right;
+#mot .menu .hang2 .o1{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+  margin-right: 20px;
 }
-#banner .mid img{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 86px;
+#mot .menu .hang2 .o2{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
 }
-#banner .mid iframe{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 86px;
+#mot .menu .hang3{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-bottom: 58px;
+}
+#mot .menu .hang3 img{
+    width: 264px;
+    height: 256px;
+    flex-grow: 0;
+    margin: 0 17.9px 0px 12.9px;
 }
 #banner .text h4{
     width: 238px;
@@ -383,7 +339,7 @@
 }
 #wap{
     width: 1440px;
-    margin-top: 3823px;
+    margin-top: 2138px;
     padding: 3px 258px 3px 252px;
     background-color: black;
     position: absolute;

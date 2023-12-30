@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy policy</title>
+    <link rel="stylesheet" href="Privacy.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="logo.jpg" height="36px" width="40.5px" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="Home.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="About.html">About</a>
+                </div>
+                <div class="item">
+                    <a href="">News</a>
+                </div>
+                <div class="item">
+                    <a href="Store.html">Store</a>
+                </div>
+                <div class="khoi">
+                    <a href="https://store.steampowered.com/">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <div class="top">
+                <h2>THE SILENT CITY</h2>
+                <h3>privacy policy</h3>
+        </div> 
+
+        <div id="mid">
+            <div class="head"><h3>LVT Studio's Privacy policy</h3></div>
+            <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum nisi et neque sollicitudin rhoncus. Integer a nunc congue, placerat nibh in, porta arcu. Nullam viverra neque ex, nec tempus ante commodo vestibulum. Integer pellentesque mattis libero eu eleifend. Morbi id nibh cursus velit pretium accumsan vitae eget lectus. Quisque a ante quam. Maecenas nunc sem, luctus et tortor et, pretium facilisis dui.</p>
+            <p>Cras et sem egestas, tempus augue a, rhoncus eros. Ut eleifend turpis quis tortor vestibulum egestas. Proin elementum interdum purus facilisis dignissim.</p>
+            <p>Suspendisse vulputate leo sit amet erat scelerisque consequat. Maecenas scelerisque mi nibh, ut pretium arcu vehicula non. Sed viverra posuere mauris, non mattis nisl ultrices nec. Maecenas euismod nec sem in elementum. Aenean ut suscipit dui. Sed dictum urna dignissim pulvinar pellentesque.</p>
+            <p>Sed non varius leo, sit amet egestas est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla commodo volutpat commodo. Donec sodales, lectus quis posuere hendrerit, elit magna laoreet dui, vel consectetur justo arcu in velit. In finibus aliquet erat in aliquam.Pellentesque leo velit, congue vel vestibulum et, ultricies sed sapien. Nulla vitae mattis sem, vitae dictum nisl. Donec vitae mollis diam, vel tempus odio. </p>
+            <p>Phasellus semper sollicitudin risus, sed cursus leo sodales tempus. Quisque quis arcu aliquam libero interdum placerat. Duis aliquet, eros ut consectetur pulvinar, ex mauris rhoncus massa, non accumsan nisl tellus non urna. Mauris mollis molestie feugiat. Fusce id egestas dui. Proin convallis nunc eget luctus faucibus. </p>
+            <p>Nullam tempus turpis a lectus finibus accumsan vitae non velit. Curabitur sed mi magna. Vivamus gravida sollicitudin pulvinar. Vestibulum sapien lectus, hendrerit a iaculis eget, viverra at lorem. Nunc blandit ultrices mi, vulputate finibus velit hendrerit ac. Aliquam vestibulum lectus arcu, ut gravida elit ullamcorper et.</p>
+            <p>Sed tincidunt neque accumsan scelerisque maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dapibus, elit lacinia maximus tincidunt, mauris massa mollis mi, ac efficitur odio purus sed dolor. </p>
+            <p>Fusce quis mi est. Maecenas non lacus at neque eleifend dapibus a blandit nulla. Vestibulum ipsum turpis, pretium eu egestas et, consectetur ac odio. Maecenas nec condimentum nibh.</p>
+            </div>
+        </div>    
+        
+        <div class="text"><h4>sign up for update!</h4> </div>
+
+        <div id="mail">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <input type="email" id="emailInput">
+            <button type="button" class="button" onclick="submitEmail()">
+                <span class="button-text">Submit</span>
+                <span class="button-bg"></span>
+            </button>
+        </div>
+    </div>
+    <div id="wap">
+        <div id="footer">
+            <div class="item">
+                <a href="Privacy.html">Privacy policy</a>
+            </div>
+            <div class="item">
+                <a href="Tos.html">Terms of Service</a>
+            </div>
+            <div class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="logo">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="item">
+                <a href="Aboutus.html">About us</a>
+            </div>
+            <div class="item">
+                <a href="https://www.gmail.com/" target="_blank"> Contact us</a>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Email popup -->
+    <div id="emailModal" class="modal">
+        <div id="modal-content">
+           <p>Thank you for sign up!</p>
+        </div>
+    </div>
+</body>
+<script>
+    function submitEmail() {
+        const email = document.getElementById('emailInput').value;
+        console.log("Email for proof: " + email);
+        // Reset the input field
+        document.getElementById('emailInput').value = '';
+        document.getElementById('emailModal').style.display = 'block';
+    }
+
+    // Close the modal when on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('emailModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>

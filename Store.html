@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="Store.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="logo.jpg" height="36px" width="40.5px" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="Home.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="About.html">About</a>
+                </div>
+                <div class="item">
+                    <a href="">News</a>
+                </div>
+                <div class="item">
+                    <b href="Store.html">Store</b>
+                </div>
+                <div class="khoi">
+                    <a href="https://store.steampowered.com/">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="banner">
+        <div class="top">
+                <h2>THE SILENT CITY</h2>
+        </div>     
+        <div class="line"></div>
+        <div id="mot">
+            <div class="menu">
+                <h3>bundle</h3>
+                <div class="hang1">
+                    <div class="o1">
+                        <a href="https://www.etsy.com/">
+                        <img src="bundle1.webp" alt="">
+                        <h4>TSC + DLC & OST</h4>
+                        <p> Includes The Silent City, DLC 1 & 2 and The Silent City OST</p>
+                        </a>
+                    </div>
+                    <div class="o2">
+                        <a href="https://www.etsy.com/">
+                        <img src="bundle2.webp" alt="">
+                        <h4>TSC + DLC</h4>
+                        <p>Includes The Silent City, DLC 1 & 2</p>
+                        </a>
+                    </div>
+                    <div class="o3">
+                        <a href="https://www.etsy.com/">
+                        <img src="bundle3.webp" alt="">
+                        <h4>TSC & OST</h4>
+                        <p> Includes The Silent City and The Silent City OST</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line2"></div>
+                <h3>game</h3>
+                <div class="hang2">
+                    <div class="o1">
+                        <a href="https://www.etsy.com/">
+                        <img src="bundle4.webp" alt="">
+                        <h4>THE SILENT CITY</h4>
+                        <p>Includes The Silent City digital download ( DRM - free)</p>
+                        </a>
+                    </div>
+                    <div class="o2">
+                        <a href="https://www.etsy.com/">
+                        <img src="bundle4.webp" alt="">
+                        <h4>DLC</h4>
+                        <p>Includes DLC 1 & </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="line3"></div>
+                <h3>ost</h3>
+                <div class="hang3">
+                    <a href="https://www.etsy.com/">
+                    <img src="bundle4.webp" alt="">
+                    <h4>OST</h4>
+                    <p>The original soundtrack for The Silent City with 30 tracks (Digital Ver)</p>
+                    </a>
+                </div>
+                
+            </div>
+            <!--<img src="anh5.png" alt="">-->
+        </div>
+        <div class="text"><h4>sign up for update!</h4> </div>
+
+        <div id="mail">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <input type="email" id="emailInput">
+            <button type="button" class="button" onclick="submitEmail()">
+                <span class="button-text">Submit</span>
+                <span class="button-bg"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="wap">
+        <div id="footer">
+            <div class="item">
+                <a href="Privacy.html">Privacy policy</a>
+            </div>
+            <div class="item">
+                <a href="Tos.html">Terms of Service</a>
+            </div>
+            <div class="logo">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="logo">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <div class="item">
+                <a href="Aboutus.html">About us</a>
+            </div>
+            <div class="item">
+                <a href="https://www.gmail.com/" target="_blank"> Contact us</a>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Email popup -->
+        <div id="emailModal" class="modal">
+            <div id="modal-content">
+                <p>Thank you for sign up!</p>
+            </div>
+        </div>
+    
+</body>
+<script>
+    function submitEmail() {
+        const email = document.getElementById('emailInput').value;
+        console.log("Email for proof: " + email);
+        // Reset the input field
+        document.getElementById('emailInput').value = '';
+        document.getElementById('emailModal').style.display = 'block';
+    }
+
+    // Close the modal when on background click
+    window.onclick = function(event) {
+        const modal = document.getElementById('emailModal');
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</html>
