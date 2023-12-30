@@ -73,7 +73,7 @@
 #banner{
     position: absolute;
     width: 1440px;
-    height: 3863px;
+    height: 2202px;
     background-image: url("back.png");
     background-size: cover;
 }
@@ -87,156 +87,7 @@
     color: white;
     margin: 52px 339px 52px 340px;
 }
-#banner .mot h3{
-    width: 393px;
-    height: 120px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-    margin: 108px 177px 25px 160px;
-}
-#banner .mot p{
-    width: 455px;
-    height: 190px;
-    margin: 25px 115px 122px 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-}
-#banner .mot img{
-    width: 550px;
-    height: 332px;
-    margin-right: 160px;
-    float: right;
-}
-#banner .hai h3{
-    width: 261px;
-    height: 120px;
-    margin-right: 160px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float: right;
-}
-#banner .hai p{
-    width: 455px;
-    height: 142px;
-    margin-right: 160px;
-    margin-top: 25px ;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-    float: right;
-}
-#banner .hai img{
-    width: 550px;
-    height: 284px;
-    margin-left: 160px;
-    margin-bottom: 167px;
-    float: left;
-}
-#banner .ba h3{
-    width: 420px;
-    height: 60px;
-    margin-left: 160px;
-    margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: #fff;
-}
-#banner .ba p{
-    width: 454px;
-    height: 96px;
-    margin-left: 160px;
-    margin-top: 474px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
 
-}
-#banner .ba img{
-    width: 550px;
-    height: 299px;
-    margin-right:160px;
-    margin-top: 106px;
-    margin-bottom: 79px;
-    float: right;
-}
-#banner .bon h3{
-    width: 340px;
-    height: 120px;
-    margin-right: 160px;
-    margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float:right;
-}
-#banner .bon p{
-    width: 455px;
-    height: 306px;
-    margin-right: 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-    float: right;
-}
-#banner .bon img{
-    width: 549px;
-    height: 356px;
-    margin-left: 160px;
-    margin-top: 139px;
-    margin-bottom: 120px;
-    float: left;
-}
 #banner .mid h3{
     width: 827px;
     height: 69px;
@@ -384,7 +235,7 @@
 }
 #wap{
     width: 1440px;
-    margin-top: 3823px;
+    margin-top: 2165px;
     padding: 3px 258px 3px 252px;
     background-color: black;
     position: absolute;
@@ -406,10 +257,3 @@
     color: white;
     font-size: 25px;
 }
-
-
-
-
-
-
-
