@@ -1,26 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=ABeeZee|Be Vietnam Pro|Saira Stencil One|Bayon');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Abeezee',sans-serif;
-    font-size: 20px;
-}
 #wrapper{
-    width: 1440px;
-    height: 40px;
-    background-color: black;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
 }
 #header{
-    width: 100%;
-    padding-left:  22px;
     display: flex;
+    width: 100%;
+    height: 40px;
+    padding-left: 22px;
     justify-content: space-between;
+    background-color: black;
 }
 #header .logo img{
     margin-top: 2px;
     border: 0 solid;
-    border-radius:50%;
+    border-radius: 50%;
 }
 #menu {
     list-style: none;
@@ -28,7 +22,7 @@
 }
 #menu .item{
     margin: 8px 20px;
-    border: 1px solid ;
+    border: 1px solid;
     width: 85px;
     height: 24px;
     box-shadow: 0 1px black;
@@ -46,353 +40,97 @@
     line-height: 24px;
     color: #3a64d0;
     text-decoration: none;
-    border-bottom: 1px solid #3a64d0;
+    border-bottom: 1px solid #4f6dc1;
 }
 #menu .item a:hover{
     color: #3a64d0;
 }
 #menu .khoi{
     width: 228px;
-    height: 40px;
     background-color: #F9D0AB;
     margin-left: 20px;
     padding: 8px 40px ;
-    text-decoration: none;
     box-sizing: border-box;
-    border: 0px solid #F9D0AB ;
+    border: 0 solid #F9D0AB ;
     border-bottom-left-radius: 50px;
-    font-size: 18px;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-weight: 700;
+
 }
 #menu .khoi a{
     color: black;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-#banner{
-    position: absolute;
-    width: 1440px;
-    height: 3863px;
-    background-image: url("back.png");
-    background-size: cover;
-}
-#banner .top h2{
-    font-family: 'Saira Stencil One', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 95px;
-    line-height: 150px;
-    align-items: center;
-    color: white;
-    margin: 52px 339px 52px 340px;
-}
-#banner .mot h3{
-    width: 393px;
-    height: 120px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #fff;
-    margin: 108px 177px 25px 160px;
-}
-#banner .mot p{
-    width: 455px;
-    height: 190px;
-    margin: 25px 115px 122px 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-}
-#banner .mot img{
-    width: 550px;
-    height: 332px;
-    margin-right: 160px;
-    float: right;
-}
-#banner .hai h3{
-    width: 261px;
-    height: 120px;
-    margin-right: 160px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float: right;
-}
-#banner .hai p{
-    width: 455px;
-    height: 142px;
-    margin-right: 160px;
-    margin-top: 25px ;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-    float: right;
-}
-#banner .hai img{
-    width: 550px;
-    height: 284px;
-    margin-left: 160px;
-    margin-bottom: 167px;
-    float: left;
-}
-#banner .ba h3{
-    width: 420px;
-    height: 60px;
-    margin-left: 160px;
-    margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: #fff;
-}
-#banner .ba p{
-    width: 454px;
-    height: 96px;
-    margin-left: 160px;
-    margin-top: 474px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
 
+.top {
+    aspect-ratio: 16/9;
+    align-items: center;
+    margin-bottom: 100px;
+    overflow: hidden;
 }
-#banner .ba img{
-    width: 550px;
-    height: 299px;
-    margin-right:160px;
-    margin-top: 106px;
-    margin-bottom: 79px;
-    float: right;
+.top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#banner .bon h3{
-    width: 340px;
-    height: 120px;
-    margin-right: 160px;
+.top h2{
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+#banner .section{
+    margin: 0 160px 120px 160px;
+    display: flex;
+    gap: 90px;
+}
+#banner .section:nth-child(2n){
+    flex-direction: row-reverse;
+}
+#banner .section h3{
     margin-bottom: 25px;
-    font-family: Bayon, sans-serif;
-    font-size: 60px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    float:right;
+    margin-right: 60px;
 }
-#banner .bon p{
-    width: 455px;
-    height: 306px;
-    margin-right: 160px;
-    font-family: ABeeZee, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: justify;
-    color: white;
-    float: right;
+#banner .section .img-content,
+#banner .section .content{
+    width: 50%;
+    overflow: hidden;
 }
-#banner .bon img{
-    width: 549px;
-    height: 356px;
-    margin-left: 160px;
-    margin-top: 139px;
-    margin-bottom: 120px;
-    float: left;
+#banner .section .img-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#banner .content{
+    flex-direction: column;
+}
+#banner .mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #banner .mid h3{
-    width: 827px;
-    height: 69px;
-    margin-left: 306px;
-    margin-right: 307px;
-    margin-bottom: 120px;
-    font-family: Bayon, sans-serif;
     font-size: 50px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
-    color: #fff;
-    float: right;
-}
-#banner .mid img{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 86px;
+    margin-bottom: 120px;
 }
 #banner .mid iframe{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
     margin-bottom: 86px;
 }
 #banner .text h4{
-    width: 238px;
-    height: 54px;
-    margin-left: 601px;
-    margin-right: 601px;
-    margin-bottom: 20px;
-    font-family: Bayon, sans-serif;
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: white;
+    text-align: center;
 }
 
 /* Footer */
-#mail{
-    display: flex;
-    flex-direction: row;
-    width: 1015px;
-    height: 45px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-#mail .icon {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
-#mail .icon i {
-    font-size: 50px;
-    color: #fff;
-}
-#mail input[type=email] {
-    flex-grow: 1;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-#mail .button {
-    display: inline-block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 38px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #ea2222;
-    border-radius: 50px;
-    border: 1px solid #ea2222;
-    margin-left: 30px;
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-    z-index: 5;
-}
-#mail .button:hover {
-    cursor: pointer;
-}
-#mail .button-text {
-    display: block;
-    position: relative;
-    padding-right: 15px;
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-    z-index: 5;
-}
-#mail .button-text:after {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-}
-#mail .button:hover .button-text:after {
-    transform: translate(30px, -50%);
-}
-#mail .button:hover .button-text {
-    transform: translateX(-3px);
-}
-#mail .button-bg {
-    border: solid 2px #fb2600;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: left 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
-}
-#mail .button:hover .button-bg {
-    left: calc(75%);
-}
-#emailModal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 10;
-}
-#modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 500px;
-    height: 270px;
-    border-radius: 35px;
-    text-align: center;
-}
 #wap{
-    width: 1440px;
-    margin-top: 3823px;
-    padding: 3px 258px 3px 252px;
     background-color: black;
-    position: absolute;
+    margin-top: 40px;
 }
 #footer{
-    width: 930px;
-    padding: 6px 133px;
     display: flex;
-    justify-content: space-between ;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+    justify-content: space-around;
     text-align: center;
 }
 #footer .item a{
@@ -400,6 +138,9 @@
     font-size: 15px;
     font-family: AbeeZee, sans-serif;
     text-decoration: none;
+}
+#footer .item a:hover{
+    color: #3a64d0;
 }
 #footer .logo i{
     color: white;

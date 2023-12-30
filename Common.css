@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Be Vietnam Pro|Saira Stencil One|Bayon');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abeezee',sans-serif;
+    font-size: 20px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("back.png");
+    background-size: cover;
+}
+p{
+    font-family: ABeeZee, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+}
+h2{
+    font-family: 'Saira Stencil One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 150px;
+    color: white;
+}
+h3{
+    font-family: Bayon, sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #fff;
+}
+h4{
+    font-family: Bayon, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+#mail{
+    display: flex;
+    flex-direction: row;
+    width: 1015px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+#mail .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+#mail .icon i {
+    font-size: 50px;
+    color: #fff;
+}
+#mail input[type=email] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+#mail .button {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 38px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #ea2222;
+    border-radius: 50px;
+    border: 1px solid #ea2222;
+    margin-left: 30px;
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
+    z-index: 5;
+}
+#mail .button:hover {
+    cursor: pointer;
+}
+#mail .button-text {
+    display: block;
+    position: relative;
+    padding-right: 15px;
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
+    z-index: 5;
+}
+#mail .button-text:after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
+}
+#mail .button:hover .button-text:after {
+    transform: translate(30px, -50%);
+}
+#mail .button:hover .button-text {
+    transform: translateX(-3px);
+}
+#mail .button-bg {
+    border: solid 2px #fb2600;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: left 0.4s cubic-bezier(0.65, 0, 0.74, 0.99);
+}
+#mail .button:hover .button-bg {
+    left: calc(75%);
+}
+#emailModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    height: 270px;
+    border-radius: 35px;
+    text-align: center;
+}
