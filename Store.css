@@ -73,7 +73,7 @@
 #banner{
     position: absolute;
     width: 1440px;
-    height: 2202px;
+    height: 2182px;
     background-image: url("back.png");
     background-size: cover;
 }
@@ -85,39 +85,143 @@
     line-height: 150px;
     align-items: center;
     color: white;
-    margin: 52px 339px 52px 340px;
+    margin: 52px 339px 27px 340px;
 }
-
-#banner .mid h3{
-    width: 827px;
-    height: 69px;
-    margin-left: 306px;
-    margin-right: 307px;
-    margin-bottom: 120px;
-    font-family: Bayon, sans-serif;
-    font-size: 50px;
+#banner .line{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+}
+#mot .menu .line2{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-top: 55px;
+}
+#mot .menu .line3{
+    width: 1120px;
+  height: 3px;
+  flex-grow: 0;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-top: 55px ;
+}
+#mot .menu h3{
+    height: 72px;
+    margin: 0px 175px 0px 160px;
+    font-family: Bayon;
+    font-size: 40px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
+    text-align: left;
     color: #fff;
-    float: right;
 }
-#banner .mid img{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 86px;
+
+#mot .menu .hang1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px
 }
-#banner .mid iframe{
-    width: 930px;
-    height: 496px;
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 86px;
+#mot .menu .hang1 .o1{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+}
+#mot .menu img{
+    width: 264px;
+  height: 256px;
+  flex-grow: 0;
+  margin: 0 17.9px 15px 12.9px;
+}
+#mot .menu h4{
+    width: 235.7px;
+  height: 60px;
+  flex-grow: 0;
+  font-family: Bayon;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #000;
+}
+#mot .menu a{
+    text-decoration: none;
+}
+#mot .menu p{
+    width: 294.8px;
+    flex-grow: 0;
+    font-family: ABeeZee;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #000;
+}
+#mot .menu .hang1 .o2{
+    width: 361px;
+    height: 450px;
+    flex-grow: 0;
+    padding: 36px 30.1px 0 36.1px;
+    background-color: #d9d9d9
+}
+#mot .menu .hang1 .o3{
+    width: 360px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30px 0 36px;
+  background-color: #d9d9d9;
+}
+#mot .menu .hang2{
+    display: inline-flex;
+    justify-content: 3px;
+    margin-left: 160px;
+    margin-right: 160px
+}
+#mot .menu .hang2 .o1{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+  margin-right: 20px;
+}
+#mot .menu .hang2 .o2{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+}
+#mot .menu .hang3{
+    width: 361px;
+  height: 450px;
+  flex-grow: 0;
+  padding: 36px 30.1px 0 36.1px;
+  background-color: #d9d9d9;
+  margin-left: 160px;
+  margin-bottom: 58px;
+}
+#mot .menu .hang3 img{
+    width: 264px;
+    height: 256px;
+    flex-grow: 0;
+    margin: 0 17.9px 0px 12.9px;
 }
 #banner .text h4{
     width: 238px;
@@ -235,7 +339,7 @@
 }
 #wap{
     width: 1440px;
-    margin-top: 2165px;
+    margin-top: 2138px;
     padding: 3px 258px 3px 252px;
     background-color: black;
     position: absolute;
